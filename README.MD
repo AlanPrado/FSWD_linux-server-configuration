@@ -4,7 +4,7 @@ Demonstration on how to setup a linux server and deploy an web application using
 
 ## Configuration Data
 
-* IP address | SSH port | Application URL | Apache Document Root
+IP address | SSH port | Application URL | Apache Document Root
 ------------ | ------------- | ------------- | -------------
 130.211.234.25 | 2200 | http://item-catalog.tk | /var/www/html/item-catalog/catalog/server/
 130.211.234.25 | 2200 | http://neighborhood-map.tk/ | /var/www/html/neighborhood-map/
