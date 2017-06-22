@@ -33,6 +33,19 @@ Demonstration on how to setup a linux server and deploy an web application using
 * Change the default-allow-ssh to allow connections tcp:2200.
 * Remove default-allow-icmp, default-allow-rdp and default-allow-internal.
 * Add default-allow-ntp to allow connections udp:123.
+* Install and setup ufw:
+```
+ sudo apt-get install ufw
+ sudo ufw default deny incoming
+ sudo ufw default allow outgoing
+ # ssh connection
+ sudo ufw allow 2200/tcp
+ # http connection
+ sudo ufw allow 80/tcp
+ # ntp connection
+ sudo ufw allow 123/udp
+ sudo ufw enable
+```
 
 7 - Remove remote login as root
 * By default, SSH access is disabled for root, check [documentation](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
